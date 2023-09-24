@@ -1,7 +1,7 @@
 Write-Host "Merging prisma schemas..."
 
-$APPS = Get-ChildItem -Path .\apps -Recurse -Filter *.prisma
-$FILES = Get-ChildItem -Path .\libs -Recurse -Filter *.prisma
+$APPS = Get-ChildItem -Path .\apps -Recurse -Filter *.prisma | where FullName -notmatch '.*\\client\\schema.prisma'
+$FILES = Get-ChildItem -Path .\libs -Recurse -Filter *.prisma | where FullName -notmatch '.*\\client\\schema.prisma'
 
 foreach ($APP in $APPS) {
   $content = Get-Content $APP.FullName -Raw

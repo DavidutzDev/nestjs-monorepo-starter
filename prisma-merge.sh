@@ -2,8 +2,8 @@
 
 echo "Merging prisma schemas..."
 
-APPS=$(find apps -type f -name "*.prisma")
-FILES=$(find libs -type f -name "*.prisma")
+APPS=$(find apps -type f -name "*.prisma" -not -path "*/client/schema.prisma")
+FILES=$(find libs -type f -name "*.prisma" -not -path "*/client/schema.prisma")
 
 for APP in $APPS; do
   sed -zi 's/[^\n]*PACKAGES.*//' "$APP"
@@ -12,8 +12,6 @@ done
 
 for FILE in $FILES; do
   CONTENT=$(sed -zne 's/.*MODELS\n//p' "$FILE")
-
-  echo "$CONTENT"
 
   for APP in $APPS; do
     echo "$CONTENT" >> "$APP"

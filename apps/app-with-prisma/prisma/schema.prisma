@@ -17,4 +17,8 @@ model ExampleModel {
 }
 // PACKAGES
 
+model LibModel {
+  id   Int    @id @default(autoincrement())
+  name String @default("")
+}
 
