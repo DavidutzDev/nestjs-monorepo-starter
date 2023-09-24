@@ -11,7 +11,9 @@
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node main",
-    "lint": "pnpm biome check ."
+    "format": "pnpm biome check .",
+    "generate:app": "nest generate app",
+    "generate:lib": "nest generate lib"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
