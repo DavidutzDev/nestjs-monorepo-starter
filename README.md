@@ -23,7 +23,7 @@ $ pnpm generate:lib {your-lib}
 
 ```bash
 # Development mode
-$ pnpm start:dev {<app-name}
+$ pnpm start:dev {app-name}
 
 # Production mode
 $ pnpm start:prod
