@@ -1,30 +1,7 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
-
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+#🚀 NestJS Monorepo Starter with Automated Deployment 🛠️
 
 ## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Kickstart your NestJS project using monorepo architecture, inspired by the [Nest](https://github.com/nestjs/nest) TypeScript starter repository of NestJS. This repository comes preconfigured with NestJS's powerful monorepo capabilities, allowing you to efficiently manage multiple services and applications. It includes automation scripts for seamless deployment, making it easy to take your NestJS applications from development to production with ease. Start building scalable, maintainable APIs and microservices today!
 
 ## Installation
 
@@ -32,42 +9,39 @@
 $ pnpm install
 ```
 
-## Running the app
+## Creating an Application and Library
 
 ```bash
-# development
-$ pnpm run start
+# To create a new NestJS application, use the following command:
+$ pnpm generate:app {your-app}
 
-# watch mode
-$ pnpm run start:dev
-
-# production mode
-$ pnpm run start:prod
+# To create a new NestJS library, use the following command:
+$ pnpm generate:lib {your-lib}
 ```
 
-## Test
+## Running the Application
 
 ```bash
-# unit tests
-$ pnpm run test
+# Development mode
+$ pnpm start:dev {<app-name}
 
-# e2e tests
-$ pnpm run test:e2e
-
-# test coverage
-$ pnpm run test:cov
+# Production mode
+$ pnpm start:prod
 ```
 
-## Support
+## Building and Deploying
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+For Linux/macOS:
+```bash ./deploy.sh | or | ./deploy.sh {your-app}
+```
+For Windows:
+```ps1 .\deploy.ps1 | or | .\deploy.ps1 {your-app}
+```
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+## Credits
+- [DavidutzDev](https://github.com/DavidutzDev) : Main contributor and creator of this repository.
+- [Po Co](https://github.com/polnio) : Collaborator who contributed to the development and improvement of the automation scripts.
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+This repository is [MIT licensed](LICENSE).
