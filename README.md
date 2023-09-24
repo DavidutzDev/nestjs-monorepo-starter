@@ -1,4 +1,4 @@
-#🚀 NestJS Monorepo Starter with Automated Deployment 🛠️
+# 🚀 NestJS Monorepo Starter with Automated Deployment 🛠️
 
 ## Description
 Kickstart your NestJS project using monorepo architecture, inspired by the [Nest](https://github.com/nestjs/nest) TypeScript starter repository of NestJS. This repository comes preconfigured with NestJS's powerful monorepo capabilities, allowing you to efficiently manage multiple services and applications. It includes automation scripts for seamless deployment, making it easy to take your NestJS applications from development to production with ease. Start building scalable, maintainable APIs and microservices today!
@@ -32,10 +32,12 @@ $ pnpm start:prod
 ## Building and Deploying
 
 For Linux/macOS:
-```bash ./deploy.sh | or | ./deploy.sh {your-app}
+```bash
+./deploy.sh | or | ./deploy.sh {your-app}
 ```
 For Windows:
-```ps1 .\deploy.ps1 | or | .\deploy.ps1 {your-app}
+```ps1
+.\deploy.ps1 | or | .\deploy.ps1 {your-app}
 ```
 
 ## Credits
