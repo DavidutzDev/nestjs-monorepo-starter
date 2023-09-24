@@ -29,6 +29,12 @@
       ],
       "@core/lib2/*": [
         "libs/lib2/src/*"
+      ],
+      "@core/lib-with-prisma": [
+        "libs/lib-with-prisma/src"
+      ],
+      "@core/lib-with-prisma/*": [
+        "libs/lib-with-prisma/src/*"
       ]
     }
   }

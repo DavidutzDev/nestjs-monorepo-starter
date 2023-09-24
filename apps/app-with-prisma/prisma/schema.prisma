@@ -1,0 +1,20 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider     = "prisma-client-js"
+  inaryTargets = ["native", "windows"]
+  output       = "./client"
+}
+
+// MODELS
+
+model ExampleModel {
+  id   Int    @id @default(autoincrement())
+  name String @default("")
+}
+// PACKAGES
+
+
